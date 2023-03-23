@@ -1,0 +1,150 @@
+  body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow: show;
+      font-family: Montserrat;
+      text-align: center;
+    }
+    .slider-wrapper {
+      width: 100%;
+      margin: 0 auto;
+      object-fit: cover;
+    }
+    .slider {
+      margin: 0 auto;
+      text-align: center;
+    }
+    .con{
+      position: relative;
+      width: 90%; 
+      height: 0; /* phụ thuộc padding */
+      padding-bottom: 85%; /* tỉ lệ dọc ngang */
+      margin: 0 auto;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      transition: transform 0.3s ease-in-out;
+      box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.25);
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .coni{
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 60%;
+      margin: 0 auto;
+      transition: transform 0.3s ease-in-out;
+    }
+    .con:hover {
+      transform: scale(1.05);
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      margin: 0 auto;
+      transition: transform 0.7s ease-in-out;
+      object-fit: cover;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .over {
+      bottom: 0%;
+      background-color: rgba(147,17,17,1);
+      content: '';
+      height: 37%;
+      position: absolute;
+      width: 100%;
+      z-index: 2;
+      display: block;
+      margin: 0 auto;
+      transition: transform 0.7s ease-in-out;
+    }
+    .cont {
+      width: 90%;
+      display: block;
+      text-align: left;
+      padding-left: 5%;
+      padding-right: 5%;
+      margin: 0 auto;
+      position: absolute;
+      bottom: 15%;
+      overflow: hidden;
+      height: 85%;
+      background-color: rgba(147,17,17,0);
+      border-radius: 5px;
+    }
+
+    p {
+      color: white;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+      opacity: 1;
+      margin-block-start: 0.5em;
+      margin-block-end: 0.2em;
+      font-size: 12px;
+    }
+
+    .dt {
+      display: block;
+      margin-top: 1.5%;
+    }
+    @media (max-width: 750px) {
+      .dt {
+        margin-top: 7%;
+      }
+    }
+    a {
+      text-decoration: none;
+    } 
+    p1 {
+      color: rgba(147,17,17,1);
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    h2 {
+      color: white;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.35);
+      margin-block-start: 0.3em;
+      margin-block-end: 0.2em;
+      line-height: 1.5;
+    }
+     @media (max-width: 750px) {
+      h2 {
+        font-size: 14px;
+      }
+    }
+    @media (min-width: 751px) and (max-width: 1000px) {
+      h2 {
+        font-size: 13px;
+      }
+    }
+    @media (min-width: 1001px) and (max-width: 1101px) {
+      h2 {
+        font-size: 13px;
+      }
+    }
+    @media (min-width: 1100px) {
+      h2 {
+        font-size: 14px;
+      }
+    }
+    .line {
+      border-bottom: 1px solid white;
+      width: 100%;
+      margin-block-start: 0.3em;
+      left: 5%
+    }
+    .slick-prev{top: 110%; left:35%}[dir=rtl].slick-prev{right:35%; left:auto}
+    .slick-next{top: 110%; right:35%}[dir=rtl].slick-next{right:auto;left:35% }
+    .slick-prev:before,
+    .slick-next:before {
+    color: rgba(147,17,17,1); 
+    }
+    .slick-prev:before {
+    content: '⮜' }
+    .slick-next:before {
+    content: '⮞'; }
